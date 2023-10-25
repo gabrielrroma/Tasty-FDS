@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar Receitas</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'recipe/css/filterRecipe.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="content">
+                <div class="logo"><a href="#">FlavorFusion</a></div>
+                <ul class="links">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <!-- Botão "Adicionar Receita" com ID "adicionar-receita-button" -->
+                    <li><a href="../novareceita" id="adicionar-receita-button">Adicionar Receita</a></li>
+                    <li><a href="#">Recomendações</a></li>
+                    <li><a href="#">Histórico</a></li>
+                    <!-- Botão "Sair" com ID "sair-button" -->
+                    <li><a href="/" id="sair-button">Sair</a></li>
+                </ul>
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <form action="#" class="search-box"></form>
+                <input type="text" placeholder="Pesquisar" required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
+        </nav>
+    </div>
+    <h1>Filtros</h1> 
+    <div class = "filtros"> 
+        <div class="input-box">
+            <label>Alergias</label>
+            <input type="text" class = "alergia" placeholder="Possui alguma alergia?" required />
+        </div>
+        <div class="input-box">
+            <label>Intolerancias:</label>
+            <input type="text" class = "intolerancia" placeholder="Possui alguma intolerância?" required />
+        </div>
+        <div class="input-box">
+            <label>Comida detestável</label>
+            <input type="text" class = "comidadetestavel" placeholder="O que não gosta?" required />
+        </div>
+        <div class="filters-date">
+            <label for="start-date">Data:</label>
+            <input type="date" id="start-date" name="start-date">
+        </div>
+        <button onclick="searchFood()">Pesquisar</button>
+    </div>
+    <div class="results">
+        <ul id="results"></ul>
+    </div>
+
+    <!-- Adicione o código JavaScript abaixo -->
+    <script>
+        // Selecione o botão "Adicionar Receita" usando seu ID
+        const adicionarReceitaButton = document.getElementById('adicionar-receita-button');
+
+        // Adicione um ouvinte de evento de clique ao botão "Adicionar Receita"
+        adicionarReceitaButton.addEventListener('click', function() {
+            // Redirecione para a página "/novareceita" quando o botão for clicado
+            window.location.href = '../novareceita';
+        });
+
+        // Selecione o botão "Sair" usando seu ID
+        const sairButton = document.getElementById('sair-button');
+
+        // Adicione um ouvinte de evento de clique ao botão "Sair"
+        sairButton.addEventListener('click', function() {
+            // Redirecione para a página "login.html" quando o botão for clicado
+            window.location.href = '/';
+        });
+    </script>
+</body>
+</html>

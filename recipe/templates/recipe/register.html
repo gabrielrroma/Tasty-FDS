@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'recipe/css/register.css' %}">
+</head>
+<body>
+    <section class="container">
+        <header>Nova Conta</header>
+        <form class="form" action="processar_cadastro.php" method="POST">
+            <div class="column1">
+                <div class="input-box">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" required>
+                </div>
+                <div class="input-box">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="input-box">
+                    <label for="username">Nome de usuário</label>
+                    <input type="text" id="username" name="username" placeholder="Digite um nome de usuário" required>
+                </div>
+                <div class="input-box">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite uma senha" required>
+                </div>
+            </div>
+
+            <div class="container1">
+                <h3>Selecione suas culinárias preferidas:</h3>
+                <div class="column3">
+                    <label><input type="checkbox" name="culinaria[]" value="francesa"> Francesa</label>
+                    <label><input type="checkbox" name="culinaria[]" value="japonesa"> Japonesa</label>
+                    <label><input type="checkbox" name="culinaria[]" value="chinesa"> Chinesa</label>
+                    <label><input type="checkbox" name="culinaria[]" value="italiana"> Italiana</label>
+                    <label><input type="checkbox" name="culinaria[]" value="indiana"> Indiana</label>
+                </div>
+                <div class="column4">
+                    <label><input type="checkbox" name="culinaria[]" value="mexicana"> Mexicana</label>
+                    <label><input type="checkbox" name="culinaria[]" value="tailandesa"> Tailandesa</label>
+                    <label><input type="checkbox" name="culinaria[]" value="grega"> Grega</label>
+                    <label><input type="checkbox" name="culinaria[]" value="brasileira"> Brasileira</label>
+                    <label><input type="checkbox" name="culinaria[]" value="marroquina"> Marroquina</label>
+                    <label><input type="checkbox" id="select-all" value="todas"> Selecionar Todas</label>
+                </div>
+            </div>    
+
+            <div class="botoes-container">
+                <div class="botao">
+                    <!-- Botão "Criar Conta" com ID "criar-conta-button" -->
+                    <button type="button" id="criar-conta-button"><a href="/filter-recipe">Criar Conta</a></button>
+                </div>
+                <div class="botao">
+                    <!-- Botão "Cancelar" com ID "cancelar-button" -->
+                    <button type="button" id="cancelar-button"><a href="/">Cancelar</a></button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        // Selecione o botão "Criar Conta" usando seu ID
+        const criarContaButton = document.getElementById('criar-conta-button');
+    
+        // Adicione um ouvinte de evento de clique ao botão "Criar Conta"
+        criarContaButton.addEventListener('click', function() {
+            // Redirecione para a página "../filtrarreceita" quando o botão for clicado
+            window.location.href = '/filter-recipe';
+        });
+    
+        // Selecione o botão "Cancelar" usando seu ID
+        const cancelarButton = document.getElementById('cancelar-button');
+    
+        // Adicione um ouvinte de evento de clique ao botão "Cancelar"
+        cancelarButton.addEventListener('click', function() {
+            // Redirecione para a página "/login" quando o botão for clicado
+            window.location.href = '/';
+        });
+    </script>
+    
+</body>
+</html>

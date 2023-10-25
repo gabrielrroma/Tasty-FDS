@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="{% static 'recipe/css/login.css' %}"/>
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">FlavorFusion</a>
+        <a href="register" class="button" id="registrar-se-button">Registrar-se</a>
+      </nav>
+    </header>
+    <div class="form_container">
+      <div class="login_form">
+        <form action="#">
+          <h2>Iniciar Sessão</h2>
+          <div class="input_box">
+            <input type="text" placeholder="Usuário" required />
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Senha" required />
+          </div>
+          <button href="filter-recipe" class="button" id='faz-login'>Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Adicione o código JavaScript abaixo -->
+    <script>
+      // Selecione o botão "Registrar-se" usando seu id
+      const registrarSeButton = document.getElementById('registrar-se-button');
+
+      // Adicione um ouvinte de evento de clique ao botão
+      registrarSeButton.addEventListener('click', function(event) {
+        // Impede o comportamento padrão do link âncora (navegar para uma nova página)
+        event.preventDefault();
+
+        // Redirecione para a página "cadastro.html"
+        window.location.href = 'register';
+      });
+
+      const loginButton = document.getElementById("faz-login");
+
+      loginButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'filter-recipe';
+      });
+    </script>
+  </body>
+</html>
+
+
