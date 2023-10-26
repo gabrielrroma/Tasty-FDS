@@ -5,10 +5,10 @@ def login(request):
     return render (request,'recipe/login.html')
 
 def register(request):
-    return render(request, 'recipe/register.html')
+    return render(request, 'recipe/cadastro.html')
 
 def filtrarreceita(request):
-    return render (request, 'recipe/filterRecipe.html')
+    return render (request, 'recipe/filtrarreceita.html')
 
 def novareceita(request):
     return HttpResponse(request, 'flavor_fusion/templates/novareceita.html')
