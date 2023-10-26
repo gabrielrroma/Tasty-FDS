@@ -98,3 +98,9 @@ Relatório do uso da programação em Par:
 - Relatório do "Uso da programação em Par" (Gabriel Pontes e Gabriel Roma) : Nossa experiência em geral foi positiva com ambas as partes se ajudando e se complementando trabalhar em equipe melhorou a qualidade do código e acelerou o processo nos permitindo aprender uns com os outros.
 
 - Relatório do "Uso da programação em Par" (Gabriel Pontes e Rubens Filho) : Nossa experiência foi positiva apesar de temos enfrentado dificuldades para centralizar o elemento "body" no CSS , apesar das dificuldades nossa colaboração nos permitiu superar os desafios e assim conseguimos aprender juntos .
+
+
+-Diagrama de atividades do sistema ATUALIZADO :
+
+
+
