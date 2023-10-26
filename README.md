@@ -6,7 +6,7 @@ Integrantes do grupo:
 
 * Gabriel Roma (grr@cesar.school) 
 
-* Miguel (Mjfa@cesar.school)
+* Miguel Andrade (Mjfa@cesar.school)
 
 * Gabriel Correia (gcp@cesar.school)
 
