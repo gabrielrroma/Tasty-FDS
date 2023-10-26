@@ -22,7 +22,7 @@ LINKS :
 
 ## Trello: https://trello.com/invite/projetodefundamentosdedesenvolvimentodesoftware/ATTIb870e1a7dc35061821cfd4327a1672a6CD892D8A
 
-## Link do Site : http://127.0.0.1:8000/login/
+## Link do Site : 
 
 ## Descrição do projeto:
 
