@@ -91,7 +91,7 @@ https://www.loom.com/share/a68090bf522a4feb898b98f7e41b7ffb
 
 # Entrega 3 :
 
-Relatório do uso da programação em Par:
+Relatório do uso da programação em Par( Acessível através do e-mail do cesar ):
 
 - Relatório do "Uso da programação em Par" : Gabriel Roma, Rubens Filho  : Nossa experiência com programação em par foi altamente positiva. Ao trabalharmos em conjunto, dividimos tarefas complexas em partes menores, o que promoveu a colaboração e a tomada de decisões conjuntas desde o início. A diversidade de habilidades na equipe enriqueceu nosso conhecimento e habilidades, e a comunicação constante eliminou mal-entendidos, resultando em código de alta qualidade com menos erros.
 
