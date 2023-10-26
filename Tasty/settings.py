@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%(_n&5+-6&1ruj_a-qtkj9+87&_u8q-6k4r23o7ksrie(*w)5l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tastyflavorfusion.azurewebsites.net']
 
 
 # Application definition
