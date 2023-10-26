@@ -20,7 +20,7 @@ LINKS :
 
 ## Jira: https://flavorfusion.atlassian.net/jira/software/projects/HIS/boards/1/backlog?selectedIssue=HIS-3
 
-## Link do Site : 
+## Link do Site : tastyflavorfusion.azurewebsites.net
 
 ## Descrição do projeto:
 
@@ -102,5 +102,6 @@ Relatório do uso da programação em Par:
 
 -Diagrama de atividades do sistema ATUALIZADO :
 
+![Diagrama de atividades drawio](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/cecb00ee-1cd3-4ca8-90d1-25eca99d5e1b)
 
 
