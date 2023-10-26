@@ -1,20 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
-    <link rel="stylesheet" href="../static/flavor_fusion/novareceita.css">
+    <link rel="stylesheet" href="{% static 'recipe/css/novareceita.css'%}">
 </head>
 <body>
     <nav>
         <div class="content">
             <div class="logo"><a href="#">FlavorFusion</a></div>
             <ul class="links">
-                <li><a href="#">Menu</a></li>
+                <li><a href="/filter-recipe" id="menu">Menu</a></li>
                 <li><a href="#">Perfil</a></li>
-                <!-- Botão "Sair" com ID "sair-button" -->
-                <li><a href="../login" id="sair-button">Sair</a></li>
+                <li><a href="/novareceita" id="adicionar-receita-button">Adicionar Receita</a></li>
+                <li><a href="#">Recomendações</a></li>
+                <li><a href="/historico" id="historico">Histórico</a></li>
+                <li><a href="/" id="sair-button">Sair</a></li>
             </ul>
             <div class="search-icon"><i class="fas fa-search"></i></div>
             <form action="#" class="search-box">
@@ -51,7 +54,7 @@
         // Adicione um ouvinte de evento de clique ao botão "Criar Receita"
         criarReceitaButton.addEventListener('click', function() {
             // Redirecione para a página "filtrarreceita.html" quando o botão for clicado
-            window.location.href = '/filtrarreceita';
+            window.location.href = '/filter-recipe';
         });
 
         // Selecione o botão "Cancelar" usando seu ID
@@ -60,7 +63,7 @@
         // Adicione um ouvinte de evento de clique ao botão "Cancelar"
         cancelarButton.addEventListener('click', function() {
             // Redirecione para a página "filtrarreceita.html" quando o botão for clicado
-            window.location.href = '/filtrarreceita';
+            window.location.href = '/filter-recipe';
         });
     </script>
 </body>

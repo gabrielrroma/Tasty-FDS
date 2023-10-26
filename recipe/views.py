@@ -11,7 +11,7 @@ def filtrarreceita(request):
     return render (request, 'recipe/filtrarreceita.html')
 
 def novareceita(request):
-    return HttpResponse(request, 'flavor_fusion/templates/novareceita.html')
+    return render(request, 'recipe/novareceita.html')
 
 def historico(request):
-    return HttpResponse(request, 'flavor_fusion/templates/historico.html')
+    return render(request, 'recipe/historico.html')
