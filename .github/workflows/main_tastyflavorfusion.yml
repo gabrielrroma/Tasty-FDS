@@ -65,3 +65,11 @@ jobs:
           app-name: 'tastyflavorfusion'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A835992A07414C6C9CD2F0BE99DBF362 }}
+
+$schema: "https://schemas.dev.azure.com/azure/static-web-apps/_schemas/2020-12-01-preview/api-definition.json#"
+name: tastyflavorfusion
+build_output_location: /staticfiles
+routes:
+   - route: /static/*
+     rewrite: /static/*
+
