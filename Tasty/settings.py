@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%(_n&5+-6&1ruj_a-qtkj9+87&_u8q-6k4r23o7ksrie(*w)5l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tastyflavorfusion.azurewebsites.net']
+ALLOWED_HOSTS = ['tastyflavorfusion.azurewebsites.net', '127.0.0.1']
 
 
 # Application definition
@@ -59,7 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates'
+            os.path.join(BASE_DIR, 'templates'),
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -123,7 +123,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIR = [
+STATICFILES_DIRS = [
     BASE_DIR / 'recipe/static'
 ]
 
