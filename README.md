@@ -22,6 +22,8 @@ LINKS :
 
 ## Link do Site : [tastyflavorfusion.azurewebsites.net](https://tastyflavorfusion.azurewebsites.net/)
 
+# Link do Figma: https://www.figma.com/file/X3NG8no4J4LQSQNhpq3sOj/Flavor-Fusion?type=design&node-id=575-272&mode=design&t=mmoTmRqmEW5qfQgi-0
+
 ## Descrição do projeto:
 
 O projeto se constitui em um Aplicativo de Receitas Personalizadas.
@@ -102,5 +104,9 @@ https://docs.google.com/document/d/1bnFE0RAPLIN7qsWkkAq0Es6nMqWP528qkwwTJ9MaBIs/
 - Quadro da Sprint 2 atualizado
 
 ![Captura de Tela (21)](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/e3454d75-87ca-4287-8887-ece2506be71f)
+
+- screencast ATUALIZADO :
+
+https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/ce1e5a16-5449-4b67-ad02-21f627256c6d
 
 
