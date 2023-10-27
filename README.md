@@ -20,7 +20,7 @@ LINKS :
 
 ## Jira: https://flavorfusion.atlassian.net/jira/software/projects/HIS/boards/1/backlog?selectedIssue=HIS-3
 
-## Link do Site : 
+## Link do Site : tastyflavorfusion.azurewebsites.net
 
 ## Descrição do projeto:
 
@@ -91,7 +91,7 @@ https://www.loom.com/share/a68090bf522a4feb898b98f7e41b7ffb
 
 # Entrega 3 :
 
-Relatório do uso da programação em Par:
+Relatório do uso da programação em Par( Acessível através do e-mail do cesar ):
 
 - Relatório do "Uso da programação em Par" : Gabriel Roma, Rubens Filho  : Nossa experiência com programação em par foi altamente positiva. Ao trabalharmos em conjunto, dividimos tarefas complexas em partes menores, o que promoveu a colaboração e a tomada de decisões conjuntas desde o início. A diversidade de habilidades na equipe enriqueceu nosso conhecimento e habilidades, e a comunicação constante eliminou mal-entendidos, resultando em código de alta qualidade com menos erros.
 
@@ -102,5 +102,6 @@ Relatório do uso da programação em Par:
 
 -Diagrama de atividades do sistema ATUALIZADO :
 
+![Diagrama de atividades drawio](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/cecb00ee-1cd3-4ca8-90d1-25eca99d5e1b)
 
 
