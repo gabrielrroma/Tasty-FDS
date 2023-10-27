@@ -20,7 +20,7 @@ LINKS :
 
 ## Jira: https://flavorfusion.atlassian.net/jira/software/projects/HIS/boards/1/backlog?selectedIssue=HIS-3
 
-## Link do Site : tastyflavorfusion.azurewebsites.net
+## Link do Site : [tastyflavorfusion.azurewebsites.net](https://tastyflavorfusion.azurewebsites.net/)
 
 ## Descrição do projeto:
 
