@@ -20,7 +20,7 @@ LINKS :
 
 ## Jira: https://flavorfusion.atlassian.net/jira/software/projects/HIS/boards/1/backlog?selectedIssue=HIS-3
 
-## Link do Site : tastyflavorfusion.azurewebsites.net
+## Link do Site : [tastyflavorfusion.azurewebsites.net](https://tastyflavorfusion.azurewebsites.net/)
 
 ## Descrição do projeto:
 
@@ -103,5 +103,9 @@ Relatório do uso da programação em Par( Acessível através do e-mail do cesa
 -Diagrama de atividades do sistema ATUALIZADO :
 
 ![Diagrama de atividades drawio](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/cecb00ee-1cd3-4ca8-90d1-25eca99d5e1b)
+
+- Quadro da Sprint 2 atualizado
+
+![Captura de Tela (21)](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/e3454d75-87ca-4287-8887-ece2506be71f)
 
 
