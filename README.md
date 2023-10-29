@@ -105,7 +105,7 @@ https://docs.google.com/document/d/1bnFE0RAPLIN7qsWkkAq0Es6nMqWP528qkwwTJ9MaBIs/
 
 ![Captura de Tela (21)](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/e3454d75-87ca-4287-8887-ece2506be71f)
 
-- screencast ATUALIZADO :
+- screencast do Figma ATUALIZADO :
 
 https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/ce1e5a16-5449-4b67-ad02-21f627256c6d
 
