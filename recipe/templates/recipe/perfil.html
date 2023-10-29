@@ -15,7 +15,7 @@
                 <div class="logo"><a href="#">FlavorFusion</a></div>
                 <ul class="links">
                     <li><a href="/filter-recipe" id="menu">Menu</a></li>
-                    <li><a href="#">Perfil</a></li>
+                    <li><a href="/perfil">Perfil</a></li>
                     <li><a href="/novareceita" id="adicionar-receita-button">Adicionar Receita</a></li>
                     <li><a href="#">Recomendações</a></li>
                     <li><a href="/historico" id="historico">Histórico</a></li>
@@ -29,49 +29,64 @@
             </div>
         </nav>
     </div>
-    <main>
-        <header>
-            <h1>Perfil de Mariana Medeiros de Barros Correia</h1>
-        </header>
-        <section class="dados-pessoais">
-            <h2>Dados pessoais</h2>
-            <p>
-                Nome e sobrenome: Mariana Medeiros de Barros Correia
-            </p>
-            <p>
-                Nome de usuário: mari1234
-            </p>
-            <p>
-                Senha: ********
-            </p>
+    <header>Configurações de perfil</header>
+    <div class="main-container">
+        <section class="container">
+            <header>Perfil</header>
+            <form class="form" action="processar_cadastro.php" method="POST">
+                <div class="column1">
+                    <div class="input-box">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="{{firstName}}" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="{{lastName}}" required>
+                    </div>
+                </div>
+                <div class="column2">
+                    <div class="input-box">
+                        <label for="username">Nome de usuário</label>
+                        <input type="text" id="username" name="username" placeholder="{{usuario}}" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="**********" required>
+                    </div>
+                </div>
+    
+                <div class="container1">
+                    <h3>Selecione suas culinárias preferidas:</h3>
+                    <div class="column3">
+                        <label><input type="checkbox" name="culinaria[]" value="francesa"> Francesa</label>
+                        <label><input type="checkbox" name="culinaria[]" value="japonesa"> Japonesa</label>
+                        <label><input type="checkbox" name="culinaria[]" value="chinesa"> Chinesa</label>
+                        <label><input type="checkbox" name="culinaria[]" value="italiana"> Italiana</label>
+                        <label><input type="checkbox" name="culinaria[]" value="indiana"> Indiana</label>
+                    </div>
+                    <div class="column4">
+                        <label><input type="checkbox" name="culinaria[]" value="mexicana"> Mexicana</label>
+                        <label><input type="checkbox" name="culinaria[]" value="tailandesa"> Tailandesa</label>
+                        <label><input type="checkbox" name="culinaria[]" value="grega"> Grega</label>
+                        <label><input type="checkbox" name="culinaria[]" value="brasileira"> Brasileira</label>
+                        <label><input type="checkbox" name="culinaria[]" value="marroquina"> Marroquina</label>
+                        <label><input type="checkbox" id="select-all" value="todas"> Selecionar Todas</label>
+                    </div>
+                </div>    
+    
+                <div class="botoes-container">
+                    <div class="botao">
+                        <!-- Botão "Criar Conta" com ID "criar-conta-button" -->
+                        <button type="button" id="criar-conta-button"><a href="/filter-recipe">Fazer alterações</a></button>
+                    </div>
+                    <div class="botao">
+                        <!-- Botão "Cancelar" com ID "cancelar-button" -->
+                        <button type="button" id="cancelar-button"><a href="/">Cancelar</a></button>
+                    </div>
+                </div>
+            </form>
         </section>
-        <section class="preferencias-culinarias">
-            <h2>Preferências culinárias</h2>
-            <ul>
-                <li>Francesa</li>
-                <li>Mexicana</li>
-                <li>Japonesa</li>
-                <li>Tailandesa</li>
-                <li>Chinesa</li>
-                <li>Grega</li>
-                <li>Italiana</li>
-                <li>Indiana</li>
-                <li>Brasileira</li>
-                <li>Americana</li>
-                <li>Marroquina</li>
-            </ul>
-        </section>
-        <section class="intolerancias-alergias">
-            <h2>Intolerâncias e alergias alimentares</h2>
-            <ul>
-                <li>Intolerância à lactose</li>
-                <li>Alergia à pimenta</li>
-                <li>Intolerância à ostra</li>
-            </ul>
-        </section>
-        <section class="alterar-conta">
-            <a href="#">Alterar conta</a>
-        </section>
-    </main>
+    </div>    
+        
 </body>
 </html>
