@@ -109,4 +109,4 @@ https://docs.google.com/document/d/1bnFE0RAPLIN7qsWkkAq0Es6nMqWP528qkwwTJ9MaBIs/
 
 https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/ce1e5a16-5449-4b67-ad02-21f627256c6d
 
-- screencast do código :
+- CI/CD com build e Deployment automatizado :
