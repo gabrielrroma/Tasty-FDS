@@ -17,3 +17,6 @@ def historico(request):
 
 def perfil(request):
     return render(request, 'recipe/perfil.html')
+
+def recomendacoes(request):
+    return render(request, 'recipe/recomendacoes.html')
