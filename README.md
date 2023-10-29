@@ -117,4 +117,6 @@ https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/cdbe197e-d8b0-4244-b7
 
 https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/1ef0a873-0215-4513-8d53-018180f61309
 
+- screencast da execução dos testes do sistemas (E2E) Automatizados :
+
 
