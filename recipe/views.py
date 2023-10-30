@@ -1,7 +1,23 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login
 
+@login_required
 def login(request):
-    return render(request,'recipe/login.html')
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        # Verifique se o usuário está cadastrado
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('filter_recipe')  # Redirecione para a página de filtrar receitas
+        else:
+            # Usuário não cadastrado, retorne alguma página de erro ou mensagem
+            return render(request, 'login_error.html')
+
+    return render(request, 'login.html')
 
 def register(request):
     return render(request, 'recipe/cadastro.html')

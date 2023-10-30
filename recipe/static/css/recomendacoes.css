@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,67 +8,71 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 body {
-    font-family: Arial, sans-serif;
     background-color: white;
 }
 
-.wrapper{
+.wrapper {
     background: #171c24;
     position: fixed;
     width: 100%;
 }
-.wrapper nav{
+
+.wrapper nav {
     display: flex;
     max-width: calc(100% - 200px);
     margin: 0 auto;
     height: 70px;
     justify-content: space-between;
 }
-nav .content{
+
+nav .content {
     display: flex;
     align-items: center;
 }
-nav .content .links{
+
+nav .content .links {
     margin-left: 80px;
     display: flex;
 }
-.content .logo a{
+
+.content .logo a {
     color: #fff;
     font-size: 30px;
     font-weight: 600;
 }
-.content .links li{
+
+.content .links li {
     list-style: none;
-   
 }
-.content .links li a{
+
+.content .links li a {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 9px 17px;
     border-radius: 5px;
-    transition: all o.3 ease;
-  }
-  
-.content .links li:hover a{
+    transition: all 0.3s ease;
+}
+
+content .links li:hover a {
     background: #323c4e;
 }
-.wrapper .search-icon{
+
+.wrapper .search-icon {
     color: #fff;
     padding: 9px 17px;
     border-radius: 5px;
-    
-} 
-
+}
 
 .content {
     padding: 20px;
+    text-align: center;
 }
 
 .content h1 {
     color: black;
+    margin-bottom: 20px;
 }
 
 .content img {
@@ -79,48 +83,55 @@ nav .content .links{
 .content p {
     color: black;
 }
-.yakisoba {
-  float: right;
-}
-.molho {
-  float: right;
-}
+
+
 .rating {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #FFD700;
+    margin-top: 5px;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .recommendation {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.left,
-.right {
+/* Estilo para centralizar o título "Recomendações" */
+h1 {
   text-align: center;
 }
 
+/* Estilo para centralizar os blocos e alinhar na página */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Estilo para os blocos 1 e 2 */
+.bloco1, .bloco2 {
+  width: 45%; /* Define a largura dos blocos */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+  margin: 10px; /* Espaçamento entre os blocos */
+  border: 1px solid #ccc; /* Adiciona uma borda para separar os blocos */
+  background-color: #f0f0f0; /* Cor de fundo */
+}
+
+/* Estilo para as imagens nos blocos */
+.bloco1 img, .bloco2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para as classificações nos blocos */
 .rating {
-  font-size: 24px;
-  color: #FFD700; 
-  margin-top: 5px;
+  font-size: 20px;
 }
 
-.left p,
-.right p {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.left img,
-.right img {
-  width: 200px;
-  height: 200px;
-}

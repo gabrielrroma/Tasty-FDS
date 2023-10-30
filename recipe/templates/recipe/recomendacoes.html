@@ -6,59 +6,62 @@
   <link rel="stylesheet" href={% static "css/recomendacoes.css" %}>
 </head>
 <body>
-    <div class="wrapper">
-        <nav>
-            <div class="content">
-                <div class="logo"><a href="/filter-recipe">FlavorFusion</a></div>
-                <ul class="links">
-                    <li><a href="/filter-recipe" id="menu">Menu</a></li>
-                    <li><a href="/perfil">Perfil</a></li>
-                    <li><a href="/novareceita" id="adicionar-receita-button">Adicionar Receita</a></li>
-                    <li><a href="/recomendacoes">Recomendações</a></li>
-                    <li><a href="/historico" id="historico">Histórico</a></li>
-                    <li><a href="/" id="sair-button">Sair</a></li>
-                </ul>
-                <div class="search-icon"><i class="fas fa-search"></i></div>
-                <form action="#" class="search-box">
-                    <input type="text" placeholder="Pesquisar" required>
-                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
-            </div>
-        </nav>
+  <div class="wrapper">
+    <nav>
+      <div class="content">
+      <div class="logo"><a href="/filter-recipe">FlavorFusion</a></div>
+        <ul class="links">
+          <li><a href="/filter-recipe" id="menu">Menu</a></li>
+          <li><a href="/perfil">Perfil</a></li>
+          <li><a href="/novareceita" id="adicionar-receita-button">Adicionar Receita</a></li>
+          <li><a href="/recomendacoes">Recomendações</a></li>
+          <li><a href="/historico" id="historico">Histórico</a></li>
+          <li><a href="/" id="sair-button">Sair</a></li>
+        </ul>
+      <div class="search-icon"><i class="fas fa-search"></i></div>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Pesquisar" required>
+          <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <h1>Recomendacoes</h1>
+    <div class="content">
+      <h1>Recomendações</h1>
+      <div class="bloco1">
+        <div class="macarrao">
+          <p>Macarrão a carbonara</p>
+          <img src="recipe\migrations\img\Captura de tela 2023-10-30 150042.png" alt="Macarrão a carbonara">
+          <div class="rating">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
         </div>
-        <h1>Recomendacoes</h1>
-<div class="content">
-  <h1>Recomendações</h1>
-  <div class="recommendation">
-    <div class="left">
-      <p>Macarrão a carbonara</p>
-      <img src="macarrao.jpg" alt="Macarrão a carbonara">
-      <div class="rating">
-        &#9733; &#9733; &#9733; &#9733; &#9733;
+          <div class="bolo">
+            <p>Bolo de chocolate</p>
+            <img src="recipe\migrations\img\Captura de tela 2023-10-30 150026.png" alt="Bolo de chocolate">
+            <div class="rating">
+              &#9733; &#9733; &#9733; &#9733; &#9733;
+            </div>
+          </div>
       </div>
-    </div>
-    <div class="right">
-      <p>Yakisoba</p>
-      <img src="yakisoba.jpg" alt="Yakisoba">
-      <div class="rating">
-        &#9733; &#9733; &#9733; &#9733; &#9733;
+      <div class="bloco2">
+        <div class="yakisoba">
+          <p>Yakisoba</p>
+          <img src="yakisoba.jpg" alt="Yakisoba">
+          <div class="rating">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
+        </div>
+        <div class="molho">
+          <p>Molho</p>
+          <img src="molho.jpg" alt="Molho">
+          <div class="rating">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="recommendation">
-    <div class="left">
-      <p>Bolo de chocolate</p>
-      <img src="Bolo.jpg" alt="Bolo de chocolate">
-      <div class="rating">
-        &#9733; &#9733; &#9733; &#9733; &#9733;
-      </div>
-    </div>
-    <div class="right">
-      <p>Molho</p>
-      <img src="molho.jpg" alt="Molho">
-      <div class="rating">
-        &#9733; &#9733; &#9733; &#9733; &#9733;
-      </div>
-    </div>
-  </div>
-</div>
+    </div> 
+   
+</body>
+</html>

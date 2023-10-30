@@ -16,19 +16,17 @@
       </nav>
     </header>
     <div class="form_container">
-      <div class="login_form">
-        <form action="#">
-          <h2>Iniciar Sessão</h2>
-          <div class="input_box">
-            <input type="text" placeholder="Usuário" required />
-          </div>
-          <div class="input_box">
-            <input type="password" placeholder="Senha" required />
-          </div>
-          <button href="filter-recipe" class="button" id='faz-login'>Login</button>
-        </form>
-      </div>
-    </div>
+      <form method="post" action="{% url 'login_custom' %}">
+        {% csrf_token %}
+        <h2>Iniciar Sessão</h2>
+        <div class="input_box">
+          <input type="text" name="username" placeholder="Usuário" required />
+        </div>
+        <div class="input_box">
+          <input type="password" name="password" placeholder="Senha" required />
+        </div>
+        <button type="submit" class="button">Login</button>
+      </form>
 
     <!-- Adicione o código JavaScript abaixo -->
     <script>
