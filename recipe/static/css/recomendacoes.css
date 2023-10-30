@@ -97,16 +97,26 @@ content .links li:hover a {
 
 .recommendation {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-/* Estilo para centralizar o título "Recomendações" */
-h1 {
-  text-align: center;
+.recommendation .left {
+    float: left;
+    width: 50%;
 }
 
-/* Estilo para centralizar os blocos e alinhar na página */
+.recommendation .right {
+    float: right;
+    width: 50%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .content {
   display: flex;
   justify-content: center;
@@ -114,24 +124,16 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* Estilo para os blocos 1 e 2 */
-.bloco1, .bloco2 {
-  width: 45%; /* Define a largura dos blocos */
-  padding: 20px; /* Espaçamento interno */
-  text-align: center; /* Centraliza o conteúdo */
-  margin: 10px; /* Espaçamento entre os blocos */
-  border: 1px solid #ccc; /* Adiciona uma borda para separar os blocos */
-  background-color: #f0f0f0; /* Cor de fundo */
+.recommendation .left {
+  float: left;
+  width: 50%;
 }
 
-/* Estilo para as imagens nos blocos */
-.bloco1 img, .bloco2 img {
-  max-width: 100%;
-  height: auto;
+.recommendation .right {
+  float: right;
+  width: 50%;
 }
 
-/* Estilo para as classificações nos blocos */
-.rating {
-  font-size: 20px;
+.recommendation {
+  margin-top: 20px;
 }
-
