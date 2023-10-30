@@ -8,17 +8,23 @@ class Login(models.Model):
         return "{} {}".format(self.nome, self.senha)
     
 class Cadastro(models.Model):
-    nome = models.CharField(max_length=100)
-    sobrenome = models.CharField(max_length=100)
-    nome_de_usuario = models.CharField(max_length=100)
-    senha = models.CharField(max_length=100)
+    nome = models.CharField(max_length=50)
+    sobrenome = models.CharField(max_length=50)
+    usuario = models.CharField(max_length=30)
+    senha = models.CharField(max_length=8)
     culinarias_preferidas = models.ManyToManyField('Culinaria')
 
     def __str__(self):
-        return self.nome_de_usuario
+        return self.usuario
 
 class Culinaria(models.Model):
-    nome = models.CharField(max_length=100)
+    nome = models.CharField(max_length=50)
 
     def __str__(self):
         return self.nome
+    
+class Filtrarreceita(models.Model):
+    alergia = models.CharField(max_length=50)
+    intolerancia = models.CharField(max_length=50)
+    comidadetestavel = models.CharField(max_length=50)
+    data = models.DateTimeField(auto_now_add=True)
