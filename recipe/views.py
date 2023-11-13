@@ -22,16 +22,16 @@ def register(request):
     return render(request, 'recipe/pages/cadastro.html')
 
 def filtrarreceita(request):
-    return render(request, 'recipe/filtrarreceita.html')
+    return render(request, 'recipe/pages/filtrarreceita.html')
 
 def novareceita(request):
-    return render(request, 'recipe/novareceita.html')
+    return render(request, 'recipe/pages/novareceita.html')
 
 def historico(request):
-    return render(request, 'recipe/historico.html')
+    return render(request, 'recipe/pages/historico.html')
 
 def perfil(request):
-    return render(request, 'recipe/perfil.html')
+    return render(request, 'recipe/pages/perfil.html')
 
 def recomendacoes(request):
-    return render(request, 'recipe/recomendacoes.html')
+    return render(request, 'recipe/pages/recomendacoes.html')

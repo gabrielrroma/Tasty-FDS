@@ -5,28 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filtrar Receitas</title>
-    <link rel="stylesheet" href="{% static 'recipe/css/historico.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pages/historico.css' %}">
+    <link rel="stylesheet" href="{% static 'css/partials/navbar.css' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <div class="hist-wrapper">
-    <nav>
-        <div class="hist-content">
-            <div class="hist-logo"><a href="/filter-recipe">FlavorFusion</a></div>
-            <ul class="hist-links">
-                <li><a href="/filter-recipe" id="menu">Menu</a></li>
-                <li><a href="/perfil">Perfil</a></li>
-                <li><a href="/novareceita" id="adicionar-receita-button">Adicionar Receita</a></li>
-                <li><a href="/recomendacoes">Recomendações</a></li>
-                <li><a href="/historico" id="historico">Histórico</a></li>
-                <li><a href="/" id="sair-button">Sair</a></li>
-            </ul>
-            <div class="hist-search-icon"><i class="fas fa-search"></i></div>
-            <form action="#" class="hist-search-box" ></form>
-                <input type="text" placeholder="Pesquisar" required>
-                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-    </nav>
-    </div>
+    {% include 'recipe/partials/navbar.html'%}
     <div class="hist-recipe-container">
         <div class="hist-recipe">
             <img src={% static 'img/bolo-de-cholate.png'%} alt="Receita 1">
