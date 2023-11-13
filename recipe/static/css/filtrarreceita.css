@@ -6,36 +6,42 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-.wrapper{
+.menu-wrapper{
     background: #171c24;
     position: fixed;
     width: 100%;
 }
-.wrapper nav{
+.menu-wrapper nav{
     display: flex;
     max-width: calc(100% - 200px);
     margin: 0 auto;
     height: 70px;
     justify-content: space-between;
 }
-nav .content{
+.menu-wrapper nav .menu-content{
     display: flex;
     align-items: center;
 }
-nav .content .links{
+.menu-wrapper nav .menu-content .menu-links{
     margin-left: 80px;
     display: flex;
 }
-.content .logo a{
+.menu-content .menu-logo a{
     color: #fff;
     font-size: 30px;
     font-weight: 600;
 }
-.content .links li{
+
+.menu-content .menu-links {
+    margin-left: 80px;
+    display: flex;
+    list-style: none;
+}
+.menu-content .menu-links li{
     list-style: none;
    
 }
-.content .links li a{
+.menu-content .menu-links li a{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -44,17 +50,17 @@ nav .content .links{
     transition: all o.3 ease;
   }
   
-.content .links li:hover a{
+.menu-content .menu-links li:hover a{
     background: #323c4e;
 }
-.wrapper .search-icon{
+.menu-wrapper .menu-search-icon{
     color: #fff;
     padding: 9px 17px;
     border-radius: 5px;
     
 } 
 
-.filtros{
+.menu-filtros{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,13 +70,13 @@ nav .content .links{
    
 }
 
-.button{
+.menu-button{
     padding: 10px 20px;
     margin-right: 10px;
     background-color: #ccc;
     border: none;
     cursor: pointer;
 }
-button:hover {
+.menu-button button:hover {
     background-color: #51AB9F;
 } 

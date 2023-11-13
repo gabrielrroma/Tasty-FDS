@@ -32,6 +32,12 @@ nav .content .links{
     font-size: 30px;
     font-weight: 600;
 }
+
+.content .links {
+    margin-left: 80px;
+    display: flex;
+    list-style: none;
+}
 .content .links li{
     list-style: none;
    

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="hist-wrapper">
     <nav>
-        <div class="content">
-            <div class="logo"><a href="/filter-recipe">FlavorFusion</a></div>
-            <ul class="links">
+        <div class="hist-content">
+            <div class="hist-logo"><a href="/filter-recipe">FlavorFusion</a></div>
+            <ul class="hist-links">
                 <li><a href="/filter-recipe" id="menu">Menu</a></li>
                 <li><a href="/perfil">Perfil</a></li>
                 <li><a href="/novareceita" id="adicionar-receita-button">Adicionar Receita</a></li>
@@ -21,20 +21,18 @@
                 <li><a href="/historico" id="historico">Histórico</a></li>
                 <li><a href="/" id="sair-button">Sair</a></li>
             </ul>
-            <div class="search-icon"><i class="fas fa-search"></i></div>
-            <form action="#" class="search-box">
+            <div class="hist-search-icon"><i class="fas fa-search"></i></div>
+            <form action="#" class="hist-search-box" ></form>
                 <input type="text" placeholder="Pesquisar" required>
                 <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-            </form>
-        </div>
     </nav>
     </div>
-    <div class="recipe-container">
-        <div class="recipe">
-            <img src="recipe\migrations\img\Captura de tela 2023-10-30 150026.png" alt="Receita 1">
-            <div class="recipe-info">
-                <p class="recipe-title">Bolo de Chocolate</p>
-                <div class="star-rating">
+    <div class="hist-recipe-container">
+        <div class="hist-recipe">
+            <img src={% static 'img/bolo-de-cholate.png'%} alt="Receita 1">
+            <div class="hist-recipe-info">
+                <p class="hist-recipe-title">Bolo de Chocolate</p>
+                <div class="hist-star-rating">
                     <label></label>
                     <label></label>
                     <label></label>
@@ -44,11 +42,11 @@
             </div>
         </div>
     
-        <div class="recipe">
+        <div class="hist-recipe">
             <img src="recipe\migrations\img\Captura de tela 2023-10-30 150042.png" alt="Receita 2">
-            <div class="recipe-info">
-                <p class="recipe-title">Macarrão à carbonara</p>
-                <div class="star-rating">
+            <div class="hist-recipe-info">
+                <p class="hist-recipe-title">Macarrão à carbonara</p>
+                <div class="hist-star-rating">
                     <label></label>
                     <label></label>
                     <label></label>

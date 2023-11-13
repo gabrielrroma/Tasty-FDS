@@ -8,14 +8,14 @@
 }
 
 /* Estilos para a classe 'wrapper' */
-.wrapper {
+.hist-wrapper {
     background: #171c24;
     position: fixed;
     width: 100%;
 }
 
 /* Estilos para a navegação dentro da classe 'wrapper' */
-.wrapper nav {
+.hist-wrapper nav {
     display: flex;
     max-width: calc(100% - 200px);
     margin: 0 auto;
@@ -24,32 +24,37 @@
 }
 
 /* Estilos para o conteúdo da navegação */
-nav .content {
+.hist-wrapper nav .hist-content {
     display: flex;
     align-items: center;
 }
 
+.hist-wrapper nav .hist-content .hist-links{
+    margin-left: 80px;
+    display: flex;
+}
+
 /* Estilos para o logotipo na classe 'content' */
-.content .logo a {
+.hist-content .hist-logo a {
     color: #fff;
     font-size: 30px;
     font-weight: 600;
 }
 
 /* Estilos para a lista de links na classe 'links' */
-.content .links {
+.hist-content .hist-links {
     margin-left: 80px;
     display: flex;
     list-style: none;
 }
 
 /* Estilos para os itens de lista de links */
-.content .links li {
-    margin-right: 10px; /* Adicionado espaçamento entre os itens */
+.hist-content .hist-links li {
+    list-style: none;
 }
 
 /* Estilos para os links na lista */
-.content .links li a {
+.hist-content .hist-links li a {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -59,19 +64,19 @@ nav .content {
 }
 
 /* Estilos de hover para os links */
-.content .links li a:hover {
+.hist-content .hist-links li a:hover {
     background: #323c4e;
 }
 
 /* Estilos para o ícone de pesquisa */
-.wrapper .search-icon {
+.hist-wrapper .hist-search-icon {
     color: #fff;
     padding: 9px 17px;
     border-radius: 5px;
 }
 
 /* Estilos para centralizar .recipe */
-.recipe-container {
+.hist-recipe-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,35 +84,35 @@ nav .content {
     height: 100vh;
 }
 
-.recipe {
+.hist-recipe {
     display: flex;
     margin-bottom: 20px;
 }
 
-.recipe img {
+.hist-recipe img {
     max-width: 100px;
     max-height: 100px;
     margin-right: 10px;
 }
 
-.recipe-info {
+.hist-recipe-info {
     flex: 1;
 }
 
-.recipe-title {
+.hist-recipe-title {
     font-weight: bold;
 }
 
-.star-rating {
+.hist-star-rating {
     display: flex;
 }
 
-.star-rating label {
+.hist-star-rating label {
     font-size: 25px;
     cursor: pointer;
 }
 
-.star-rating label::before {
+.hist-star-rating label::before {
     content: "\2605";
     color: #ffcc00; /* Estrelas preenchidas em amarelo */
 }

@@ -1,92 +1,108 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/perfil.css'%}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/perfil.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Perfil</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <nav>
-            <div class="content">
-                <div class="logo"><a href="/filter-recipe">FlavorFusion</a></div>
-                <ul class="links">
-                    <li><a href="/filter-recipe" id="menu">Menu</a></li>
-                    <li><a href="/perfil">Perfil</a></li>
-                    <li><a href="/novareceita" id="adicionar-receita-button">Adicionar Receita</a></li>
-                    <li><a href="/recomendacoes">Recomendações</a></li>
-                    <li><a href="/historico" id="historico">Histórico</a></li>
-                    <li><a href="/" id="sair-button">Sair</a></li>
-                </ul>
-                <div class="search-icon"><i class="fas fa-search"></i></div>
-                <form action="#" class="search-box">
-                    <input type="text" placeholder="Pesquisar" required>
-                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
-            </div>
-        </nav>
+      <nav>
+        <div class="content">
+          <div class="logo">
+            <a href="/filter-recipe">FlavorFusion</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="/filter-recipe" id="menu">Menu</a>
+            </li>
+            <li>
+              <a href="/perfil">Perfil</a>
+            </li>
+            <li>
+              <a href="/novareceita" id="adicionar-receita-button">Adicionar Receita</a>
+            </li>
+            <li>
+              <a href="/recomendacoes">Recomendações</a>
+            </li>
+            <li>
+              <a href="/historico" id="historico">Histórico</a>
+            </li>
+            <li>
+              <a href="/" id="sair-button">Sair</a>
+            </li>
+          </ul>
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Pesquisar" required />
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+        </div>
+      </nav>
     </div>
     <header>Configurações de perfil</header>
     <div class="main-container">
-        <section class="container">
-            <header>Perfil</header>
-            <form class="form" action="processar_cadastro.php" method="POST">
-                <div class="column1">
-                    <div class="input-box">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="{{firstName}}" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="sobrenome">Sobrenome</label>
-                        <input type="text" id="sobrenome" name="sobrenome" placeholder="{{lastName}}" required>
-                    </div>
-                </div>
-                <div class="column2">
-                    <div class="input-box">
-                        <label for="username">Nome de usuário</label>
-                        <input type="text" id="username" name="username" placeholder="{{usuario}}" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" placeholder="**********" required>
-                    </div>
-                </div>
-    
-                <div class="container1">
-                    <h3>Selecione suas culinárias preferidas:</h3>
-                    <div class="column3">
-                        <label><input type="checkbox" name="culinaria[]" value="francesa"> Francesa</label>
-                        <label><input type="checkbox" name="culinaria[]" value="japonesa"> Japonesa</label>
-                        <label><input type="checkbox" name="culinaria[]" value="chinesa"> Chinesa</label>
-                        <label><input type="checkbox" name="culinaria[]" value="italiana"> Italiana</label>
-                        <label><input type="checkbox" name="culinaria[]" value="indiana"> Indiana</label>
-                    </div>
-                    <div class="column4">
-                        <label><input type="checkbox" name="culinaria[]" value="mexicana"> Mexicana</label>
-                        <label><input type="checkbox" name="culinaria[]" value="tailandesa"> Tailandesa</label>
-                        <label><input type="checkbox" name="culinaria[]" value="grega"> Grega</label>
-                        <label><input type="checkbox" name="culinaria[]" value="brasileira"> Brasileira</label>
-                        <label><input type="checkbox" name="culinaria[]" value="marroquina"> Marroquina</label>
-                        <label><input type="checkbox" id="select-all" value="todas"> Selecionar Todas</label>
-                    </div>
-                </div>    
-    
-                <div class="botoes-container">
-                    <div class="botao">
-                        <!-- Botão "Criar Conta" com ID "criar-conta-button" -->
-                        <button type="button" id="criar-conta-button"><a href="/filter-recipe">Fazer alterações</a></button>
-                    </div>
-                    <div class="botao">
-                        <!-- Botão "Cancelar" com ID "cancelar-button" -->
-                        <button type="button" id="cancelar-button"><a href="/">Cancelar</a></button>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </div>    
-        
-</body>
+      <section class="container">
+        <header>Perfil</header>
+        <form class="form" action="processar_cadastro.php" method="POST">
+          <div class="column1">
+            <div class="input-box">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="{{ firstName }}" required />
+            </div>
+            <div class="input-box">
+              <label for="sobrenome">Sobrenome</label>
+              <input type="text" id="sobrenome" name="sobrenome" placeholder="{{ lastName }}" required />
+            </div>
+          </div>
+          <div class="column2">
+            <div class="input-box">
+              <label for="username">Nome de usuário</label>
+              <input type="text" id="username" name="username" placeholder="{{ usuario }}" required />
+            </div>
+            <div class="input-box">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" placeholder="**********" required />
+            </div>
+          </div>
+
+          <div class="container1">
+            <h3>Selecione suas culinárias preferidas:</h3>
+            <div class="column3">
+              <label><input type="checkbox" name="culinaria[]" value="francesa" />Francesa</label>
+              <label><input type="checkbox" name="culinaria[]" value="japonesa" />Japonesa</label>
+              <label><input type="checkbox" name="culinaria[]" value="chinesa" />Chinesa</label>
+              <label><input type="checkbox" name="culinaria[]" value="italiana" />Italiana</label>
+              <label><input type="checkbox" name="culinaria[]" value="indiana" />Indiana</label>
+            </div>
+            <div class="column4">
+              <label><input type="checkbox" name="culinaria[]" value="mexicana" />Mexicana</label>
+              <label><input type="checkbox" name="culinaria[]" value="tailandesa" />Tailandesa</label>
+              <label><input type="checkbox" name="culinaria[]" value="grega" />Grega</label>
+              <label><input type="checkbox" name="culinaria[]" value="brasileira" />Brasileira</label>
+              <label><input type="checkbox" name="culinaria[]" value="marroquina" />Marroquina</label>
+              <label><input type="checkbox" id="select-all" value="todas" />Selecionar Todas</label>
+            </div>
+          </div>
+
+          <div class="botoes-container">
+            <div class="botao">
+              <!-- Botão "Criar Conta" com ID "criar-conta-button" -->
+              <button type="button" id="criar-conta-button"><a href="/filter-recipe">Fazer alterações</a></button>
+            </div>
+            <div class="botao">
+              <!-- Botão "Cancelar" com ID "cancelar-button" -->
+              <button type="button" id="cancelar-button"><a href="/">Cancelar</a></button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
 </html>

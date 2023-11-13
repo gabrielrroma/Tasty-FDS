@@ -19,7 +19,7 @@ def login(request):
     return render(request, 'login.html')
 
 def register(request):
-    return render(request, 'recipe/cadastro.html')
+    return render(request, 'recipe/pages/cadastro.html')
 
 def filtrarreceita(request):
     return render(request, 'recipe/filtrarreceita.html')

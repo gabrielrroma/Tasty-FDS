@@ -95,7 +95,7 @@ nav .content {
 
 /* Estilos para os itens de lista de links */
 .content .links li {
-    margin-right: 10px; /* Adicionado espaçamento entre os itens */
+    list-style: none;
 }
 
 /* Estilos para os links na lista */

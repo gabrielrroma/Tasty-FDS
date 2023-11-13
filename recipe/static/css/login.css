@@ -7,26 +7,26 @@ body {
   padding: 0;
 }
 
-.header {
+.login-header {
   background-color: #333;
   color: #fff;
   padding: 10px;
   text-align: center;
 }
 
-.nav {
+.login-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav_logo {
+.login-nav-logo {
   font-size: 1.5rem;
   text-decoration: none;
   color: #fff;
 }
 
-.button {
+.login-button {
   background-color: #007BFF;
   color: #fff;
   padding: 10px 20px;
@@ -36,14 +36,14 @@ body {
   cursor: pointer;
 }
 
-.form_container {
+.login-form-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.login_form {
+.login-form {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -61,17 +61,8 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
-button {
-  background-color: #007BFF;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 /* Estilos específicos para a página de login */
-.login_form h2 {
+.login-form h2 {
   font-size: 1.5rem;
 }
 
