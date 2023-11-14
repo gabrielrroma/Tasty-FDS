@@ -1,24 +1,15 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receitas</title>
-    <link rel="stylesheet" href="{% static 'css/pages/novareceita.css'%}">
-    <link rel="stylesheet" href="{% static 'css/partials/navbar.css' %}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
+{% include 'recipe/partials/head.html' %}
 <body>
     {% include 'recipe/partials/navbar.html'%}
-    <div class="container">
+    <div class="novareceita-container">
         <h1>Criar Nova Receita</h1>
         <form action="resultado.html" method="get">
             <label for="nome">Nome da Receita:</label>
             <input type="text" id="nome" name="nome" required>
             <label for="ingredientes">Ingredientes:</label>
             <textarea id="ingredientes" name="ingredientes" placeholder="Digite os ingredientes, um por linha." required></textarea>
-            <div class="botoes-container">
+            <div class="botoes-novareceita-container">
                 <div class="botao">
                     <!-- Botão "Criar Receita" com ID "criar-receita-button" -->
                     <button type="button" id="criar-receita-button">Criar Receita</button>
@@ -28,7 +19,7 @@
                     <button type="button" id="cancelar-button">Cancelar</button>
                 </div>
             </div>
-        </form>
+        </novareceita-cotainer>
     </div>
 
     <!-- Adicione o código JavaScript abaixo -->

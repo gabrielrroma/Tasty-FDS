@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.novareceita-container {
     max-width: 2400px;
     margin: 0 auto;
     background-color: #fff;
@@ -16,36 +16,36 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
+.novareceita-container h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #262E3A;
 }
 
-form {
+.novareceita-container form {
     display: flex;
     flex-direction: column;
 }
 
-label {
+.novareceita-container label {
     font-weight: bold;
     margin-bottom: 5px;
     color: #262E3A;
 }
 
-input[type="text"],
-textarea {
+.novareceita-container input[type="text"],
+.novareceita-container textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
-textarea {
+.novareceita-container textarea {
     min-height: 100px;
 }
 
-button {
+.novareceita-container button {
     background-color: #E6E9EC;
     color: #262E3A;
     border: none;
@@ -54,68 +54,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.novareceita-container button:hover {
     background-color: #51AB9F;
 } 
-
-.wrapper {
-    background: #171c24;
-    position: fixed;
-    width: 100%;
-}
-
-/* Estilos para a navegação dentro da classe 'wrapper' */
-.wrapper nav {
-    display: flex;
-    max-width: calc(100% - 200px);
-    margin: 0 auto;
-    height: 70px;
-    justify-content: space-between;
-}
-
-/* Estilos para o conteúdo da navegação */
-nav .content {
-    display: flex;
-    align-items: center;
-}
-
-/* Estilos para o logotipo na classe 'content' */
-.content .logo a {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-/* Estilos para a lista de links na classe 'links' */
-.content .links {
-    margin-left: 80px;
-    display: flex;
-    list-style: none;
-}
-
-/* Estilos para os itens de lista de links */
-.content .links li {
-    list-style: none;
-}
-
-/* Estilos para os links na lista */
-.content .links li a {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 9px 17px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Estilos de hover para os links */
-.content .links li a:hover {
-    background: #323c4e;
-}
-
-/* Estilos para o ícone de pesquisa */
-.wrapper .search-icon {
-    color: #fff;
-    padding: 9px 17px;
-    border-radius: 5px;
-}

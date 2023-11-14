@@ -1,38 +1,31 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filtrar Receitas</title>
-    <link rel="stylesheet" href="{% static 'css/pages/filtrarreceita.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/partials/navbar.css' %}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  </head>
+{% include 'recipe/partials/head.html' %}
   <body>
-    {% include 'recipe/partials/navbar.html'%}
+    {% include 'recipe/partials/navbar.html' %}
     <h1>Filtros</h1>
     <div class="menu-filtros">
-      <div class="menu-input-box">
-        <label>Alergias</label>
-        <input type="text" class="alergia" placeholder="Possui alguma alergia?" required />
+      <div class="menu-container">
+        <div class="menu-input-box">
+          <label>Alergias</label>
+          <input type="text" class="alergia" placeholder="Possui alguma alergia?" required />
+        </div>
+        <div class="menu-input-box">
+          <label>Intolerancias:</label>
+          <input type="text" class="intolerancia" placeholder="Possui alguma intolerância?" required />
+        </div>
+        <div class="menu-input-box">
+          <label>Comida detestável</label>
+          <input type="text" class="comidadetestavel" placeholder="O que não gosta?" required />
+        </div>
+        <div class="menu-input-box">
+          <label for="start-date">Data:</label>
+          <input type="date" id="start-date" name="start-date" />
+        </div>
+        <button onclick="searchFood()">Pesquisar</button>
       </div>
-      <div class="menu-input-box">
-        <label>Intolerancias:</label>
-        <input type="text" class="intolerancia" placeholder="Possui alguma intolerância?" required />
+      <div class="menu-results">
+        <ul id="results"></ul>
       </div>
-      <div class="menu-input-box">
-        <label>Comida detestável</label>
-        <input type="text" class="comidadetestavel" placeholder="O que não gosta?" required />
-      </div>
-      <div class="menu-filters-date">
-        <label for="start-date">Data:</label>
-        <input type="date" id="start-date" name="start-date" />
-      </div>
-      <button onclick="searchFood()">Pesquisar</button>
-    </div>
-    <div class="menu-results">
-      <ul id="results"></ul>
     </div>
 
     <!-- Adicione o código JavaScript abaixo -->

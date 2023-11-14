@@ -14,7 +14,27 @@
     height: 150px;
     padding: 9px 15px;
     max-width: calc(100% - 200px);
+    
    
+}
+
+.menu-container {
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    padding: 0.9rem 1.5rem;
+}
+
+
+.menu-input-box {
+    text-decoration: none;
+    margin: 3rem;
+    max-width: calc(100% - 200px);
+}
+
+.menu-input-box label {
 }
 
 .menu-button{
@@ -23,6 +43,7 @@
     background-color: #ccc;
     border: none;
     cursor: pointer;
+    
 }
 .menu-button button:hover {
     background-color: #51AB9F;
