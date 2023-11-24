@@ -1,4 +1,4 @@
-NOME DO GRUPO : Tasty
+NOME DO GRUPO: Tasty
 
 Integrantes do grupo:
 
@@ -11,8 +11,6 @@ Integrantes do grupo:
 * Gabriel Correia (gcp@cesar.school)
 
 * Mariana Correia (mmbc@cesar.school)
-
-* João Lyra Monteiro (jlm@cesar.school)
 
 Tema do projeto: Receitas Personalizadas
 
