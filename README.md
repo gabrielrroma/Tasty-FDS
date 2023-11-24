@@ -133,6 +133,10 @@ https://docs.google.com/document/d/1a04j41wabLkFXiM8EEnPOAbj3rLN07ayfIb54iYIOIk/
 
 ![Diagrama do Tasty](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/83b49cfb-7709-4ca2-85d4-1e7a7facbcfd)
 
+Quadro da Sprint 3 atualizado :
+
+
+
 - screencast do Figma ATUALIZADO :
 
 https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/69fae410-10c5-4cf0-8498-5e841a10350a
