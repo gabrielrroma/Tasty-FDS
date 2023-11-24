@@ -135,7 +135,7 @@ https://docs.google.com/document/d/1a04j41wabLkFXiM8EEnPOAbj3rLN07ayfIb54iYIOIk/
 
 Quadro da Sprint 3 atualizado :
 
-
+![Captura de Tela (49)](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/55f6ed9a-e76c-4691-a8be-ad02275e7c1d)
 
 - screencast do Figma ATUALIZADO :
 
