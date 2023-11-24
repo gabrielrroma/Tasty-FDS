@@ -135,3 +135,6 @@ https://docs.google.com/document/d/1a04j41wabLkFXiM8EEnPOAbj3rLN07ayfIb54iYIOIk/
 
 - screencast do Figma ATUALIZADO :
 
+https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/69fae410-10c5-4cf0-8498-5e841a10350a
+
+
