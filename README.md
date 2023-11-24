@@ -127,3 +127,4 @@ https://github.com/gabrielrroma/Tasty-FDS/assets/84236149/f6e745bd-7a90-4358-8e3
 
 # Entrega 4 + Apresentação Final
 
+Relatório do uso da programação em Par( Acessível através do e-mail do cesar ):
