@@ -1,4 +1,4 @@
-NOME DO GRUPO : Tasty
+NOME DO GRUPO: Tasty
 
 Integrantes do grupo:
 
@@ -11,8 +11,6 @@ Integrantes do grupo:
 * Gabriel Correia (gcp@cesar.school)
 
 * Mariana Correia (mmbc@cesar.school)
-
-* João Lyra Monteiro (jlm@cesar.school)
 
 Tema do projeto: Receitas Personalizadas
 
@@ -126,4 +124,21 @@ https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/1ef0a873-0215-4513-8d
 https://github.com/gabrielrroma/Tasty-FDS/assets/84236149/f6e745bd-7a90-4358-8e3f-7a372aaf5bb0
 
 # Entrega 4 + Apresentação Final
+
+- Relatório do uso da programação em Par( Acessível através do e-mail do cesar ):
+
+https://docs.google.com/document/d/1a04j41wabLkFXiM8EEnPOAbj3rLN07ayfIb54iYIOIk/edit?usp=sharing
+
+-Diagrama de atividades do sistema ATUALIZADO :
+
+![Diagrama do Tasty](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/83b49cfb-7709-4ca2-85d4-1e7a7facbcfd)
+
+Quadro da Sprint 3 atualizado :
+
+![Captura de Tela (49)](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/55f6ed9a-e76c-4691-a8be-ad02275e7c1d)
+
+- screencast do Figma ATUALIZADO :
+
+https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/69fae410-10c5-4cf0-8498-5e841a10350a
+
 
