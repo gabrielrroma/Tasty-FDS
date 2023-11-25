@@ -4,43 +4,25 @@
     {% include 'recipe/partials/navbar.html'%}
     <div class="novareceita-container">
         <h1>Criar Nova Receita</h1>
-        <form action="resultado.html" method="get">
-            <label for="nome">Nome da Receita:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="ingredientes">Ingredientes:</label>
-            <textarea id="ingredientes" name="ingredientes" placeholder="Digite os ingredientes, um por linha." required></textarea>
+        <form action="{% url 'novareceita' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="nome">Nome da Receita:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="ingredientes">Ingredientes:</label>
+                <textarea id="ingredientes" name="ingredientes" class="form-control" placeholder="Digite os ingredientes, um por linha." required></textarea>
+            </div>
             <div class="botoes-novareceita-container">
                 <div class="botao">
-                    <!-- Botão "Criar Receita" com ID "criar-receita-button" -->
-                    <button type="button" id="criar-receita-button">Criar Receita</button>
+                    <button type="submit" class="btn btn-primary">Criar Receita</button>
                 </div>
                 <div class="botao">
-                    <!-- Botão "Cancelar" com ID "cancelar-button" -->
-                    <button type="button" id="cancelar-button">Cancelar</button>
+                    <a href="{% url 'filtrarreceita' %}" class="btn btn-secondary">Cancelar</a>
                 </div>
             </div>
-        </novareceita-cotainer>
+        </form>
     </div>
-
-    <!-- Adicione o código JavaScript abaixo -->
-    <script>
-        // Selecione o botão "Criar Receita" usando seu ID
-        const criarReceitaButton = document.getElementById('criar-receita-button');
-
-        // Adicione um ouvinte de evento de clique ao botão "Criar Receita"
-        criarReceitaButton.addEventListener('click', function() {
-            // Redirecione para a página "filtrarreceita.html" quando o botão for clicado
-            window.location.href = '/filter-recipe';
-        });
-
-        // Selecione o botão "Cancelar" usando seu ID
-        const cancelarButton = document.getElementById('cancelar-button');
-
-        // Adicione um ouvinte de evento de clique ao botão "Cancelar"
-        cancelarButton.addEventListener('click', function() {
-            // Redirecione para a página "filtrarreceita.html" quando o botão for clicado
-            window.location.href = '/filter-recipe';
-        });
-    </script>
 </body>
 </html>

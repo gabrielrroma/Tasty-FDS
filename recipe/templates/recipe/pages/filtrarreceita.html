@@ -1,52 +1,16 @@
 {% load static %}
 {% include 'recipe/partials/head.html' %}
-  <body>
-    {% include 'recipe/partials/navbar.html' %}
-    <h1>Filtros</h1>
-    <div class="menu-filtros">
-      <div class="menu-container">
-        <div class="menu-input-box">
-          <label>Alergias</label>
-          <input type="text" class="alergia" placeholder="Possui alguma alergia?" required />
-        </div>
-        <div class="menu-input-box">
-          <label>Intolerancias:</label>
-          <input type="text" class="intolerancia" placeholder="Possui alguma intolerância?" required />
-        </div>
-        <div class="menu-input-box">
-          <label>Comida detestável</label>
-          <input type="text" class="comidadetestavel" placeholder="O que não gosta?" required />
-        </div>
-        <div class="menu-input-box">
-          <label for="start-date">Data:</label>
-          <input type="date" id="start-date" name="start-date" />
-        </div>
-        <button onclick="searchFood()">Pesquisar</button>
-      </div>
-      <div class="menu-results">
-        <ul id="results"></ul>
-      </div>
+<body>
+{% include 'recipe/partials/navbar.html' %}
+<div class="menu-results">
+    <h1>Receitas</h1>
+    <div class="receitas-grid">
+        {% for receita in receitas %}
+            <div class="receita-card">
+                <h3>{{ receita.nome }}</h3>
+                <p>{{ receita.ingredientes }}</p>
+            </div>
+        {% endfor %}
     </div>
-
-    <!-- Adicione o código JavaScript abaixo -->
-    <script>
-      // Selecione o botão "Adicionar Receita" usando seu ID
-      const adicionarReceitaButton = document.getElementById('adicionar-receita-button')
-      
-      // Adicione um ouvinte de evento de clique ao botão "Adicionar Receita"
-      adicionarReceitaButton.addEventListener('click', function () {
-        // Redirecione para a página "/novareceita" quando o botão for clicado
-        window.location.href = '../novareceita'
-      })
-      
-      // Selecione o botão "Sair" usando seu ID
-      const sairButton = document.getElementById('sair-button')
-      
-      // Adicione um ouvinte de evento de clique ao botão "Sair"
-      sairButton.addEventListener('click', function () {
-        // Redirecione para a página "login.html" quando o botão for clicado
-        window.location.href = 'recipe/templates/registration/login.html'
-      })
-    </script>
-  </body>
-</html>
+</div>
+</body>

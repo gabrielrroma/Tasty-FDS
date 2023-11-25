@@ -2,7 +2,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .models import Cadastro
+from .models import Cadastro, Receita
 
 def cadastrar_usuario(request):
     if request.method == "POST":
@@ -54,7 +54,8 @@ def login_usuario(request):
 
 @login_required
 def filtrarreceita(request):
-    return render(request, 'recipe/pages/filtrarreceita.html')
+    receitas = Receita.objects.all()
+    return render(request, 'recipe/pages/filtrarreceita.html', {'receitas': receitas})
 
 def novareceita(request):
     return render(request, 'recipe/pages/novareceita.html')
@@ -67,3 +68,14 @@ def perfil(request):
 
 def recomendacoes(request):
     return render(request, 'recipe/pages/recomendacoes.html')
+
+@login_required
+def novareceita(request):
+    if request.method == 'POST':
+        nome = request.POST.get('nome')
+        ingredientes = request.POST.get('ingredientes')
+        Receita.objects.create(nome=nome, ingredientes=ingredientes)
+
+        return redirect('filtrarreceita')
+
+    return render(request, 'recipe/pages/novareceita.html')
