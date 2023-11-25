@@ -1,8 +1,42 @@
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate
+from django.contrib.auth.decorators import login_required
+from .models import Cadastro
+
+def cadastrar_usuario(request):
+    if request.method == "POST":
+        form_usuario = UserCreationForm(request.POST)
+        if form_usuario.is_valid():
+            user = form_usuario.save(commit=False)
+
+            # Verifique se 'nome' está presente na solicitação antes de acessá-lo
+            nome = request.POST.get('nome', '')
+            sobrenome = request.POST.get('sobrenome', '')
+            senha = request.POST.get('senha', '')
+
+            # Agora, criamos uma instância do modelo Cadastro e associamos ao usuário
+            Cadastro.objects.create(
+                usuario=user,
+                nome=nome,
+                sobrenome=sobrenome,
+                senha=senha,
+                # Adicione outras informações conforme necessário
+            )
+
+            user.save()
+            login(request, user)
+            return redirect('filtrarreceita')  # Redirecionar para a página de filtrar receitas
+
+    else:
+        form_usuario = UserCreationForm()
+
+    return render(request, 'recipe/pages/cadastro.html', {'form_usuario': form_usuario})
 
 
-def login(request):
+
+
+def login_usuario(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
@@ -11,16 +45,14 @@ def login(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('filter_recipe')  # Redirecione para a página de filtrar receitas
+            return redirect('filtrarreceita')  # Redirecione para a página de filtrar receitas
         else:
             # Usuário não cadastrado, retorne alguma página de erro ou mensagem
-            return render(request, 'login_error.html')
+            return render(request, 'recipe/pages/login_error.html')
 
-    return render(request, 'login.html')
+    return render(request, 'registration/login.html')
 
-def register(request):
-    return render(request, 'recipe/pages/cadastro.html')
-
+@login_required
 def filtrarreceita(request):
     return render(request, 'recipe/pages/filtrarreceita.html')
 

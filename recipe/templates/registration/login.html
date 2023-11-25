@@ -1,53 +1,24 @@
-{% load static %}
+<!-- recipe/templates/recipe/pages/login.html -->
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"  href="{% static 'css/pages/login.css' %}">
     <title>Login</title>
-  </head>
-  <body>
-    <header class="login-header">
-      <nav class="login-nav">
-        <a href="#" class="login-nav-logo">FlavorFusion</a>
-        <a href="register" class="login-button" id="registrar-se-button">Registrar-se</a>
-      </nav>
-    </header>
-    <div class="login-form-container">
-      <form method="post" action="{% url 'login' %}">
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="post" action="{% url 'login' %}">
         {% csrf_token %}
-        <h2>Iniciar Sessão</h2>
-        <div class="input_box">
-          <input type="text" name="username" placeholder="Usuário" required />
-        </div>
-        <div class="input_box">
-          <input type="password" name="password" placeholder="Senha" required />
-        </div>
-        <button type="submit" class="login-button">Login</button>
-      </form>
-
-    <!-- Adicione o código JavaScript abaixo -->
-    <script>
-      // Selecione o botão "Registrar-se" usando seu id
-      const registrarSeButton = document.getElementById('registrar-se-button');
-
-      // Adicione um ouvinte de evento de clique ao botão
-      registrarSeButton.addEventListener('click', function(event) {
-        // Impede o comportamento padrão do link âncora (navegar para uma nova página)
-        event.preventDefault();
-
-        // Redirecione para a página "cadastro.html"
-        window.location.href = 'register';
-      });
-
-      const loginButton = document.getElementById("faz-login");
-
-      loginButton.addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = 'filter-recipe';
-      });
-    </script>
-  </body>
-</html> 
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <br>
+    <a href="{% url 'cadastrar_usuario' %}">Não tem uma conta? Cadastre-se aqui.</a>
+</body>
+</html>
