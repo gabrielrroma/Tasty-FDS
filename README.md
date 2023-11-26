@@ -1,4 +1,4 @@
-NOME DO GRUPO: Tasty
+NOME DO GRUPO: Tasty.
 
 Integrantes do grupo:
 
