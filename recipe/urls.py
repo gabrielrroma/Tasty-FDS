@@ -13,4 +13,6 @@ urlpatterns = [
     path('novareceita/', login_required(views.novareceita), name='novareceita'),
     path('perfil/', login_required(views.perfil), name='perfil'),
     path('recomendacoes/', login_required(views.recomendacoes), name='recomendacoes'),
+    path('atualizacoes/', login_required(views.atualizacoes), name='atualizacoes'),
+    path('favoritados/', login_required(views.favoritados), name='favoritados'),
 ]

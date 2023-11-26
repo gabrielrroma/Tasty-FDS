@@ -79,3 +79,9 @@ def novareceita(request):
         return redirect('filtrarreceita')
 
     return render(request, 'recipe/pages/novareceita.html')
+
+def atualizacoes(request):
+    return render(request, 'recipe/pages/atualizacoes.html')
+
+def favoritados(request):
+    return render(request, 'recipe/pages/favoritados.html')
