@@ -36,7 +36,7 @@ class LoginTest(unittest.TestCase):
 class CadastroTest(unittest.TestCase):
 
     def setUp(self):
-        self.SITE_LINK = "https://tastyflavorfusion.azurewebsites.net/register/"  # Substitua pela URL correta
+        self.SITE_LINK = "https://tastyflavorfusion.azurewebsites.net/cadastrar_usuario/"  # Substitua pela URL correta
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
 
