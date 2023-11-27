@@ -1,6 +1,6 @@
 NOME DO GRUPO: Tasty.
 
-Integrantes do grupo:
+Integrantes do grupo :
 
 * Rubens Filho (rscf@cesar.school)
 
