@@ -3,7 +3,7 @@ NOME DO GRUPO: Tasty.
 Integrantes do grupo : 
 
 * Rubens Filho (rscf@cesar.school)
-b 
+
 * Gabriel Roma (grr@cesar.school) 
 
 * Miguel Andrade (Mjfa@cesar.school)
@@ -141,5 +141,11 @@ Quadro da Sprint 3 atualizado :
 - screencast do Figma ATUALIZADO :
 
 https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/69fae410-10c5-4cf0-8498-5e841a10350a
+
+- CI/CD com build e Deployment automatizado :
+
+Uploading Editing Tasty-FDS_README.md at main · gabrielrroma_Tasty-FDS - Google Chrome 2023-11-27 19-40-17.mp4…
+
+
 
 
