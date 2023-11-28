@@ -137,6 +137,9 @@ Quadro da Sprint 3 atualizado :
 
 ![Captura de Tela (54)](https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/5dff8551-d1d7-4dc2-8b24-e7057d1eaf97)
 
+- CI/CD com build e Deployment automatizado :
+
+Uploading Editing Tasty-FDS_README.md at main · gabrielrroma_Tasty-FDS - Google Chrome 2023-11-27 19-40-17.mp4…
 
 - screencast do Figma ATUALIZADO :
 
