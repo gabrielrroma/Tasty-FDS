@@ -1,3 +1,5 @@
+
+https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/9b6eb031-2e66-4984-88ae-855f82b7ed32
 NOME DO GRUPO: Tasty.
 
 Integrantes do grupo :
@@ -139,10 +141,28 @@ Quadro da Sprint 3 atualizado :
 
 - CI/CD com build e Deployment automatizado :
 
-Uploading Editing Tasty-FDS_README.md at main · gabrielrroma_Tasty-FDS - Google Chrome 2023-11-27 19-40-17.mp4…
+https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/eb4831bd-a364-4194-9473-b012dfc896e7
 
 - screencast do Figma ATUALIZADO :
 
 https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/69fae410-10c5-4cf0-8498-5e841a10350a
+
+- screencast do Código :
+
+Parte 1 :
+
+https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/e44f3188-d6f9-4a56-ae89-2acdcfe0398c
+
+
+Parte 2 :
+
+https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/e7fac63d-1737-48f7-b558-78a10734311c
+
+
+- Testes de Sistema (E2E) Automatizados
+
+
+
+https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/b25402ad-5188-45fc-a45c-8f90d006f4f2
 
 
