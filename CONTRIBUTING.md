@@ -1,4 +1,4 @@
-#Configurando o Ambiente para Contribuição#
+#Configurando o Ambiente para Contribuição
 Este guia o ajudará a configurar rapidamente o ambiente necessário para começar a contribuir com nosso projeto. Siga as etapas abaixo:
 
 Pré-Requisitos
