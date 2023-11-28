@@ -1,6 +1,6 @@
 NOME DO GRUPO: Tasty.
 
-Integrantes do grupo : 
+Integrantes do grupo :
 
 * Rubens Filho (rscf@cesar.school)
 
@@ -142,6 +142,4 @@ Quadro da Sprint 3 atualizado :
 
 https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/69fae410-10c5-4cf0-8498-5e841a10350a
 
-- CI/CD com build e Deployment automatizado :
 
-https://github.com/gabrielrroma/Tasty-FDS/assets/137455847/26438fa8-45eb-4bec-a38b-58156ac2e819
